@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Taquin",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.34",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-taquin",
     "finish-args": [
@@ -33,8 +33,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gnome-taquin.git",
-                    "tag": "3.34.0",
-                    "commit": "34e75d1dac3627c6792e78949d1403e043c1f30a"
+                    "tag": "3.36.0",
+                    "commit": "6cb558acf17ba74f5ee34306b58ee5565223e5b8"
                 }
             ]
         }

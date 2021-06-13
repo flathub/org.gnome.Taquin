@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Taquin",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-taquin",
     "finish-args": [
@@ -14,6 +14,7 @@
     ],
     "cleanup": ["/share/man"],
     "modules": [
+        "shared-modules/libcanberra/libcanberra.json",
         {
             "name" : "gsound",
             "buildsystem" : "autotools",
@@ -31,8 +32,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-taquin/3.36/gnome-taquin-3.36.3.tar.xz",
-                    "sha256": "64434bb12f096f2cf76a764dabe020aa38deed291042ed754d91102530da2b91"
+                    "url": "https://download.gnome.org/sources/gnome-taquin/3.38/gnome-taquin-3.38.1.tar.xz",
+                    "sha256": "96db3d8fad497924a7390ad108a3ef72432a1d62d2456cae5e1934057018814f"
+                },
+                {
+                    "type": "patch",
+                    "paths": [ "unowned.patch", "dont-try-to-alter-gtkchild-field.patch" ]
                 }
             ]
         }

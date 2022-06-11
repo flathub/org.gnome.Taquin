@@ -18,7 +18,6 @@
         {
             "name" : "gsound",
             "buildsystem": "meson",
-            "builddir": true,
             "sources" : [
                 {
                     "type" : "archive",

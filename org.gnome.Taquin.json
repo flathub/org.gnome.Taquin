@@ -12,7 +12,16 @@
         /* Sound! */
         "--socket=pulseaudio"
     ],
-    "cleanup": ["/share/man"],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/girepository-1.0",
+        "/share/gir-1.0",
+        "/share/vala",
+        "/share/man",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         "shared-modules/libcanberra/libcanberra.json",
         {

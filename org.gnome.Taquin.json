@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Taquin",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-taquin",
     "finish-args": [

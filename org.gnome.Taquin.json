@@ -5,11 +5,9 @@
     "sdk": "org.gnome.Sdk",
     "command": "gnome-taquin",
     "finish-args": [
-        /* X11 + XShm access */
-        "--share=ipc", "--socket=fallback-x11",
-        /* Wayland access */
+        "--share=ipc",
+        "--socket=fallback-x11",
         "--socket=wayland",
-        /* Sound! */
         "--socket=pulseaudio",
         "--device=dri"
     ],
@@ -28,15 +26,15 @@
         {
             "name" : "gsound",
             "buildsystem": "meson",
+            "cleanup" : [
+                "/bin"
+            ],
             "sources" : [
                 {
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz",
                     "sha256" : "ca2d039e1ebd148647017a7f548862350bc9af01986d39f10cfdc8e95f07881a"
                 }
-            ],
-            "cleanup" : [
-                "/bin"
             ]
         },
         {
